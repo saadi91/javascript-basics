@@ -8,6 +8,26 @@
         <form>
             <label for="age">your age : </label><input type="text" id="age" name="age"/><br/>
             <button id="validate" name="validate">validate</button>
+            <div id="result"></div>
         </form>
     </body>
+    <script>
+        var age = document.getElementById("age");
+        var validate = document.getElementById("validate");
+        var res = document.getElementById("result");
+
+        function Show(event){
+            event.preventDefault()
+         var a = age.value;
+        if(a > 18){
+            res.innerHTML=("your are over 18");
+            
+             }
+        else if (a < 18){
+            res.innerHTML=("your are under 18");
+            
+        }
+    }
+    validate.addEventListener(`click`,Show)    
+    </script>
 </html>

@@ -11,4 +11,15 @@
             <button  id="validate" name ="validate">validate</button>
         </form>
     </body>
+    <script>
+        var firstNumber = document.getElementById("first_number");
+        var secondNumber = document.getElementById("second_number");
+        var validate = document.getElementById("validate");
+
+        var multiply = function(){
+            var total = firstNumber.value * secondNumber.value;
+            alert(total);
+        }
+        validate.addEventListener("click", multiply);
+    </script>
 </html>
