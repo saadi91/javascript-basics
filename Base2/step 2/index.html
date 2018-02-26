@@ -6,7 +6,7 @@
 </head>
 <body>
   <form>
-    <label for="name">Your name  : </label><input type="text" name="name" value="" id="name"/>
+    <label for="name">Your name  : </label><input type="text" name="name" value="" id="name" onblur="show()"/>
   </form>
 </body>
 <script>
@@ -15,6 +15,6 @@
   var show = function(){
     alert("thank you for participating!");
   }
-  input.addEventListener("mouseout", show);
+
 </script>
 </html>

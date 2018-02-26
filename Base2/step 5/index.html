@@ -20,6 +20,13 @@
     var img4 = document.querySelector("#image4");
     var img5 = document.querySelector("#image5");
 
+    var image_list = document.querySelectorAll('img')
+
+    for(var i = 0; i < image_list.length; i++){
+      const image = image_list[i]
+      console.log(image,i+1)
+    }
+
     var change_images = function(event){
       
       if(img1 == event.target){
