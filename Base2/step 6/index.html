@@ -11,4 +11,52 @@
       <img src="images/image4.jpg" id="image4" />
       <img src="images/image5.jpg" id="image5" />
   </body>
+  <script>
+      var img1 = document.querySelector("#image1");
+      var img2 = document.querySelector("#image2");
+      var img3 = document.querySelector("#image3");
+      var img4 = document.querySelector("#image4");
+      var img5 = document.querySelector("#image5");
+
+      var change_images = function(event){
+        
+        if(img1 == event.target){
+         img1.src = "images/image1_2.jpg";
+        }
+        if(img2 == event.target){
+         img2.src = "images/image2_2.jpg";
+        }
+        if(img3 == event.target){
+         img3.src = "images/image3_2.jpg";
+        }
+        if(img4 == event.target){
+         img4.src = "images/image4_2.jpg";   
+        }
+        if(img5 == event.target){
+         img5.src = "images/image5_2.jpg";
+       }
+      }
+
+      var origin_images = function(event){
+        
+        if(img1 == event.target){
+          img1.src = "images/image1.jpg";
+        }
+        if(img2 == event.target){
+          img2.src = "images/image2.jpg";
+        }
+        if(img3 == event.target){
+         img3.src = "images/image3.jpg";
+        }
+        if(img4 == event.target){
+         img4.src = "images/image4.jpg";
+        }
+        if(img5 == event.target){
+         img5.src = "images/image5.jpg";
+        }
+      }
+      
+      this.addEventListener("mouseover",change_images);
+      this.addEventListener("mouseout", origin_images);
+    </script>
 </html>

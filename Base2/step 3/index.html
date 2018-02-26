@@ -8,5 +8,15 @@
   <form>
     <label for="name">Your name  : </label><input type="text" name="name" value="" id="name"/>
   </form>
+  <div id="result"></div>
 </body>
+<script>
+var input = document.getElementById("name");
+var result = document.getElementById("result");
+
+function show(){
+  result.innerHTML = input.value;
+}
+addEventListener("keyup", show);
+</script>
 </html>

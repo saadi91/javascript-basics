@@ -14,5 +14,27 @@
   <div class="color red" ></div>
   <div class="color blue" ></div>
 </div>
+<script>
+  var green = document.querySelector(".green");
+  var red = document.querySelector(".red");
+  var blue = document.querySelector(".blue");
+
+
+  var paragh = document.querySelector("P");
+
+  var change_color = function(event){
+   if(green == event.target){
+    paragh.style.color = "green";
+   }
+   if(red == event.target){
+    paragh.style.color = "red";
+   }
+   if(blue == event.target){
+    paragh.style.color = "blue";
+   }
+  }
+  this.addEventListener("click", change_color);
+  this.add
+</script>
 </body>
 </html>

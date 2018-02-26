@@ -11,7 +11,7 @@
 2. do it with one function!
 3. Commit
 
-## Step 3
+## Step 3:
 
 1. change the text's color depending on the color clicked
 2. Commit
