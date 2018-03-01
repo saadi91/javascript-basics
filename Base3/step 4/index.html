@@ -14,15 +14,17 @@
 <script>
  
   var confirm = document.querySelector("#confirmation");
+  var password = document.querySelector("#password");
   var button = document.querySelector("button");
   
 
-  var change_border = function(){
-    var password = document.querySelector("#password");
-    var pass_value = password.value;
-    if(!pass_value && pass_value !== "s1234"){
-      password.style.border = "3px solid";
-      confirm.style.border = "3px solid";
+  var change_border = function() {
+    var pass_val = password.value;
+    var conf_val = confirm.value;
+
+    if(pass_val !== conf_val) {
+      password.style.border = "2px solid gray";
+      confirm.style.border = "2px solid gray";
     }
   }
   button.addEventListener("click", change_border);

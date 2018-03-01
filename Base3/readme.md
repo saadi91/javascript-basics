@@ -10,7 +10,7 @@
 1. show or hide the text depending on which anchor (a tag) is clicked.
 2. do it with one function!
 3. Commit
-
+]
 ## Step 3:
 
 1. change the text's color depending on the color clicked

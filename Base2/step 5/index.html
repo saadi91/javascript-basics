@@ -14,39 +14,20 @@
     </div>
   </body>
   <script>
-    var img1 = document.querySelector("#image1");
-    var img2 = document.querySelector("#image2");
-    var img3 = document.querySelector("#image3");
-    var img4 = document.querySelector("#image4");
-    var img5 = document.querySelector("#image5");
-
-    var image_list = document.querySelectorAll('img')
-
-    for(var i = 0; i < image_list.length; i++){
-      const image = image_list[i]
-      console.log(image,i+1)
-    }
-
-    var change_images = function(event){
-      
-      if(img1 == event.target){
-       img1.src = "images/image1_2.jpg";
-      }
-      if(img2 == event.target){
-       img2.src = "images/image2_2.jpg";
-      }
-      if(img3 == event.target){
-       img3.src = "images/image3_2.jpg";
-      }
-      if(img4 == event.target){
-       img4.src = "images/image4_2.jpg";   
-      }
-      if(img5 == event.target){
-       img5.src = "images/image5_2.jpg";
-     }
-    }
+   
+    const image_list = document.querySelectorAll('img')
     
-    this.addEventListener("mouseover",change_images);
-  
+    const onMouseOver = addEventListener("mouseover", function(event) {
+
+      for(let i = 0; i < image_list.length; i++) {
+
+          const image = image_list[i]
+          n = i+1;
+          if(image == event.target){
+          image.src ='images/image'+n+'_2.jpg';
+         }
+       }
+    });
+    
   </script>
 </html>

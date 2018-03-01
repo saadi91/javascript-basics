@@ -22,9 +22,8 @@
 
   var paragh = document.querySelector("P");
 
-  var change_color = function(event){
+  var change_color = addEventListener("click", function(event){
 
-    console.log(event)
    if(green == event.target){
     paragh.style.color = "green";
    }
@@ -33,10 +32,10 @@
    }
    if(blue == event.target){
     paragh.style.color = "blue";
-   }
-  }
-  this.addEventListener("click", change_color);
-  this.add
+    }
+
+   }); 
+
 </script>
 </body>
 </html>
